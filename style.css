@@ -1,0 +1,132 @@
+*,
+*::before
+*::after {
+	box-sizing:border-box;
+}
+
+header {
+			background-color: black;
+			color: white;
+			padding: 15px;
+		}
+
+		nav ul {
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			padding: 0;
+		}
+
+		nav a {
+			color: white;
+			text-decloration: none;
+		}
+
+		#title {
+			text-align: center;
+			padding: 40px;
+			background-color: goldenrod;
+		}
+
+		.homepage {
+			display: flex;
+			gap: 30px;
+			padding: 20px;
+		}
+
+		.left-column {
+			flex: 2;
+		}
+
+		.right-column {
+			flex: 1;
+		}
+
+		.card {
+			border: 1px solid #ccc;
+			padding: 15px;
+			margin-bottom: 20px;
+		}
+
+		.work-grid {
+			display: flex;
+			gap: 100px;
+		}
+
+		@media (max-width: 760px) {
+
+			.homepage {
+				flex-direction: column;
+			}
+
+			.work-grid {
+				flex-direction: column;
+			}
+		}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.buttoncard {
+	text-align: center;
+}
+
+button {
+	background-color: gold;
+	border: none;
+	font-size: 16px;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: black;
+	color: gold;
+}
+
+.card {
+	border-radius: 8px;
+	h2 {
+		text-align: center;
+	}
+
+	ul {
+		padding: 10px;
+	}
+}
+
+footer {
+	p {
+		text-align: center;
+	}
+}
+
+.image-container {
+	text-align: center;
+}
+
+.image-container img {
+	margin: 10px;
+}
+
+.experience {
+	display: grid;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+	.experience-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.image-container img {
+		width: 100%;
+		height: auto;
+	}
+}
